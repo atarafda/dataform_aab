@@ -1,0 +1,6 @@
+config {
+  type: "view",
+  database: "angular-glyph-435509-a0",
+  schema: "wizard_database",
+  name: "X_WIZ_WO_PRODUCTS",
+}

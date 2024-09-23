@@ -1,6 +1,24 @@
 config {
-  type: "view",
-  database: "angular-glyph-435509-a0",
-  schema: "wizard_database",
-  name: "X_WIZ_WO_PRODUCTS",
+    type: "view",
+    database: "angular-glyph-435509-a0",
+    schema: "wiz_database",
+    name: "X_WO_PRODUCTS"
 }
+
+SELECT
+  *,
+  'WOP' AS SOURCE_TABLE
+FROM
+  ${ref("WO_PRODUCTS")}
+WHERE
+  QUANTITY <> ''
+  AND QUANTITY=1
+UNION ALL
+SELECT
+  *,
+  'WOPH' as SOURCE_TABLE
+FROM
+  ${ref("WO_PRODUCTS_HIST")}
+WHERE
+  QUANTITY <> ''
+  AND QUANTITY=1

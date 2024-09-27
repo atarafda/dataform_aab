@@ -2,7 +2,7 @@ config {
     type: "view",
     database: "angular-glyph-435509-a0",
     schema: "wiz_database",
-    name: "X_WO_PRODUCTS"
+    name: "test1_WO_PRODUCTS"
 }
 
 SELECT
@@ -45,3 +45,4 @@ ORDER BY
   r.PRODUCT_SEQ,
   r.SOURCE_TABLE DESC,
   r.UPDATING_DATE DESC
+

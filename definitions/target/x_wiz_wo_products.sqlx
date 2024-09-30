@@ -2,7 +2,8 @@ config {
     type: "table",
     database: "angular-glyph-435509-a0",
     schema: "wiz_database",
-    name: "X_WO_PRODUCTS"
+    name: "X_WO_PRODUCTS",
+    tags: "tag_v1"
 }
 
 SELECT
